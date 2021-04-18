@@ -1,0 +1,5 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[0] Config.pm:315> INFO - Logfile is 'projectpaper.blg'
+[58] biber:330> INFO - === Sun Apr 18, 2021, 15:45:39
+[127] Utils.pm:411> ERROR - Cannot find 'projectpaper.bcf'!
+[127] Biber.pm:132> INFO - ERRORS: 1
