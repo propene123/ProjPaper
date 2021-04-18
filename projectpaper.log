@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.16)  18 APR 2021 15:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.16)  18 APR 2021 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -59,45 +59,50 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
- [1
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 35.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 35.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 35.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+5.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 53.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 53.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 53.
+
+LaTeX Warning: Citation 'budgen' on page 2 undefined on input line 64.
 
 
-LaTeX Warning: Citation 'budgen' on page 2 undefined on input line 60.
+LaTeX Warning: Citation 'euther' on page 2 undefined on input line 66.
 
 
-LaTeX Warning: Citation 'euther' on page 2 undefined on input line 62.
+LaTeX Warning: Citation 'futher' on page 2 undefined on input line 66.
 
 
-LaTeX Warning: Citation 'futher' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation 'futher' on page 2 undefined on input line 62.
+LaTeX Warning: Citation 'futher' on page 2 undefined on input line 66.
 
 [2] (./projectpaper.bbl) [3] (./projectpaper.aux) ) 
 Here is how much of TeX's memory you used:
- 658 strings out of 479383
- 10404 string characters out of 5875830
- 285246 words of memory out of 5000000
- 17814 multiletter control sequences out of 15000+600000
- 417431 words of font info for 50 fonts, out of 8000000 for 9000
+ 681 strings out of 479383
+ 10721 string characters out of 5875830
+ 284246 words of memory out of 5000000
+ 17833 multiletter control sequences out of 15000+600000
+ 417745 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,8n,59p,623b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,8n,59p,1576b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts
-/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-</usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb>
-Output written on projectpaper.pdf (3 pages, 47400 bytes).
+/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
+mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/ur
+w/times/utmr8a.pfb>
+Output written on projectpaper.pdf (3 pages, 57373 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
