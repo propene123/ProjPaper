@@ -2,7 +2,8 @@
 \usepackage{times}
 \usepackage{durhampaper}
 \usepackage{harvard}
-
+\usepackage{commath,amsmath,amssymb,amsfonts}
+\usepackage{bm}
 \citationmode{abbr}
 \bibliographystyle{agsm}
 
@@ -32,11 +33,29 @@ Storm surge, uncertainty quantification, inverse problem, Bayesian inference, Mo
 \end{keywords}
 
 \section{Introduction}
+\noindent
 When severe storms hit coastal regions, the high winds and atmospheric pressure can cause a sea level rise. This affect is known as a storm surge. Storm surges pose a grave danger to coastal communities both from an economic and a human perspective. From 1963 to 2012 $49\%$ of all deaths caused by hurricanes in the US were due to the subsequent storm surge (REF DEATH PAPER). It has also been estimated that if coastal flood defences are not improved in US coastal regions then by 2050 then yearly losses could exceed US\$1trillion (REF COST PAPER).  To address this issue it is necessary to plan and implement better coastal flood defences. One such way to plan this new infrastructure is to use numerical modelling techniques to simulate hypothetical storm surge events, induced by hurricanes, and study the simulated sea level rise to assess coastal regions most at risk to loss of human life and loss of property. This poses a problem as storm surge models are very complex and their accuracy depends inherently on how well calibrated the input parameters are. To address this, without having accurate measurements of the underlying phenomena governing these the parameters, it is necessary to estimate them and calibrate the model accordingly. Unfortunately due to the complex nature of the numerical models this is time-prohibited and therefore more sophisticated methods of estimation and calibration are used to infer these parameters and quantify the uncertainty of them.
 
-In this paper we focus on using a range of different techniques that fall under the umbrella of surrogate modelling. This is the use of less accurate models that are less computationally expensive to run then the full model (REF QUIRANTE). The remainder of this section will give an overview of storm surge modelling, inverse uncertainty quantification, surrogate modelling, and model calibration as well as the motivations for comparing the various techniques.
+In this paper we focus on using a range of different techniques that fall under the umbrella of surrogate modelling. This is the use of less accurate models that are less computationally expensive to run then the full model (REF QUIRANTE). The remainder of this section will give an overview of storm surge modelling, surrogate modelling, inverse uncertainty quantification, and model calibration as well as the motivations for comparing the various techniques.
 
 \subsection{Background}
+\noindent
+Simulating storm surges is often done using 2D shallow water equations given as (REF EQUATION PAPER).
+\begin{equation}
+	\pd{{\bf U}}{t}+\pd{{\bf F(U)}}{x}+\pd{{\bf G(U)}}{y}={\bf S}_\tau+{\bf S}_b
+\end{equation}
+where ${\bf U}=(h,hu,hv)^T$ this represents the conserved variables according to the three-dimensional conservation laws, with $h$ being the $z$ coordinate (flow depth) and $u, v$ representing the velocity vector averaged by depth. With flux functions ${\bf F}$, ${\bf G}$ defined as:
+\begin{align}
+	{\bf F} &= \left( hu,hu^2+\frac{1}{2}g_\psi h^2,huv \right) \\
+	{\bf G} &= \left( hv,huv,hv^2+\frac{1}{2}g_\psi h^2 \right)
+\end{align}
+where $g_\psi=g\cos^2\psi$ with $\psi$ being the cosine direction of the seabed's normal. ${\bf S}_\tau$ describes the frictional forces caused by the seabed and is parameterised according to Manning's friction law and an empirically determined $n$ called a Manning roughness coefficient (REF MANNING PAPER). These equations are then solved using finite volume methods to calculate how water depth changes over time against a discretised spacial mesh.
+
+The Manning roughness $n$ must be determined empirically using real world measurements. This is infeasible for a general model for simulating storm surge as it would require these experimental values for $n$ to be determined at each location you would like to simulate. For this reason we use inverse uncertainty quantification to perform parameter calibration. This is done using a Bayesian model starting with a prior distribution of roughness coefficients. This allows for the simulated results to be compared with the real-world results and update the parameters accordingly until they have been estimated to a desired level of confidence. The precise formulation of this Bayesian approach will be explained in a later section. In order to infer the final model parameters the Bayesian model must be sampled repeatedly and the sampled values for $n$ are then used in the simulation with the new results used to further refine the Bayesian model. This sampling is usually performed using Markov chain Monte Carlo (REF MCMC POPULAR), this is, however, computationally expensive. The requirement of running the simulation multiple times in this approach is massively time prohibitive when using complex models such as those for storm surge simulation, which is why surrogate modelling is used as ``grey-box'' substitute.
+
+
+
+
 
 \section{Related Work}
 This section presents a survey of existing work on the problems that this project addresses.  it should be between 2 to 4 pages in length.  The rest of this section shows the formats of subsections as well as some general formatting information for tables, figures, references and equations.
