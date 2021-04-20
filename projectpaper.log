@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.16)  20 APR 2021 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.16)  20 APR 2021 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -316,13 +316,13 @@ ari-ables ac-cord-ing to the three-dimensional
 
 [2] [3] (./projectpaper.bbl) [4] (./projectpaper.aux)
 Package rerunfilecheck Info: File `projectpaper.out' has not changed.
-(rerunfilecheck)             Checksum: 6CA8A29763C9B8810277080980FA6733;357.
+(rerunfilecheck)             Checksum: 605074E1D8F36D2D4E2AC7ED9AB93F50;432.
  ) 
 Here is how much of TeX's memory you used:
- 5884 strings out of 479383
- 85572 string characters out of 5875830
- 393007 words of memory out of 5000000
- 22860 multiletter control sequences out of 15000+600000
+ 5886 strings out of 479383
+ 85602 string characters out of 5875830
+ 393010 words of memory out of 5000000
+ 22861 multiletter control sequences out of 15000+600000
  424107 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,9n,85p,1576b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -335,10 +335,10 @@ ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
 /usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on projectpaper.pdf (4 pages, 112030 bytes).
+Output written on projectpaper.pdf (4 pages, 113208 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 108 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
