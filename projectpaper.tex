@@ -4,6 +4,7 @@
 \usepackage{harvard}
 \usepackage{commath,amsmath,amssymb,amsfonts}
 \usepackage{bm}
+\usepackage{hyperref}
 \citationmode{abbr}
 \bibliographystyle{agsm}
 
@@ -29,7 +30,7 @@
 \end{abstract}
 
 \begin{keywords}
-Storm surge, uncertainty quantification, inverse problem, Bayesian inference, Monte-Carlo, Surrogate Model
+Storm surge, uncertainty quantification, inverse problem, Bayesian inference, Monte-Carlo, Surrogate Model, kriging, polynomial chaos
 \end{keywords}
 
 \section{Introduction}
@@ -54,71 +55,37 @@ where $g_\psi=g\cos^2\psi$ with $\psi$ being the cosine direction of the seabed'
 The Manning roughness $n$ must be determined empirically using real world measurements. This is infeasible for a general model for simulating storm surge as it would require these experimental values for $n$ to be determined at each location you would like to simulate. For this reason we use inverse uncertainty quantification to perform parameter calibration. This is done using a Bayesian model starting with a prior distribution of roughness coefficients. This allows for the simulated results to be compared with the real-world results and update the parameters accordingly until they have been estimated to a desired level of confidence. The precise formulation of this Bayesian approach will be explained in a later section. In order to infer the final model parameters the Bayesian model must be sampled repeatedly and the sampled values for $n$ are then used in the simulation with the new results used to further refine the Bayesian model. This sampling is usually performed using Markov chain Monte Carlo (REF MCMC POPULAR), this is, however, computationally expensive. The requirement of running the simulation multiple times in this approach is massively time prohibitive when using complex models such as those for storm surge simulation, which is why surrogate modelling is used as ``grey-box'' substitute.
 
 Surrogate modelling is the use of a simplified model that approximates the outcome of the actual model. In the context of this paper it is a simplified model to approximate the outcome of the storm surge simulation. The use of such a surrogate model is necessary due to the long runtime of an actual simulation run (REF Tsunami paper). Designing a good surrogate model is difficult and must be done in way that approximates well otherwise the runtime benefit is not worth it and will result in inaccurate parameter calibration, discussed previously. There are many different approaches to surrogate modelling such as kriging (REF Kriging paper) and support vector machines. In this paper we consider kriging, an alternative method, and a hybrid of the two.
-\section{Related Work}
+
+\subsection{Motivation}
+\noindent
+As previously discussed the use of full numerical models for parameter calibration and inference is infeasible due to the runtime cost of repeated model runs when performing Bayesian inference. For this reason the primary way of improving parameter calibration is to create more accurate and faster surrogate models. It is also possible to perform parameter calibration using the \textit{adjoint method} in which an analytical inverse problem is formulated, however this can be extremely complicated for large numerical models such as storm surge simulation and is therefore beyond the scope of this paper. For this reason in this paper we focus on the surrogate modelling approach to parameter calibration.
+
+The commonly used methods for surrogate modelling draw from a wide range of mathematical disciplines such statistics and even machine learning. In this paper we focus on the statistical methods for surrogate modelling of storm surge phenomena in order to determine their efficacy for this problem.
+
+\subsection{Objectives}
+\noindent
+In this paper we aim to answer the following research question: \textit{How can surrogate modelling be used to calibrate storm surge model parameters?} We have divided the outcomes of the research into three categories: minimum, intermediate, and advanced.
+\begin{itemize}
+	\item
+	\textbf{Minimum: } Implement and analyse the efficacy of kriging to approximate the result of a numerical storm surge simulation. This includes implementing a storm surge simulation as well using a pre-existing software library.
+	\item
+	\textbf{Intermediate:} Implement and analyse the efficacy of polynomial chaos (REF PolyChaos) as a surrogate modelling technique and compare the results to those of kriging.
+	\item
+	\textbf{Advanced:} Implement the proposed hybrid technique \textit{polynomial chaos kriging} proposed by (REF PC-Kriging) and compare the results to the previous methods. As well as analyse the contributions posed by the constituent methods (kriging, and polynomial chaos) to the final result of the hybrid method. Finally we will conclude whether or not the hybrids result is dominated by one of the constituent methods giving only a negligible increase in either accuracy or decrease in runtime when compared to a single method.
+\end{itemize}
+
+The layout of the rest of this paper is as follows: section \ref{sec:lit} presents a survey of related and background literature on surrogate modelling for Bayesian inference in the context of parameter calibration, section \ref{sec:sol} describes the proposed solution and methodology to answer the proposed research question, and section \ref{sec:val} addresses how the proposed solution and literature review have been carried out in  way that ensures any findings drawn from this research are valid and reproducible.
+
+\section{Related Work} \label{sec:lit}
 This section presents a survey of existing work on the problems that this project addresses.  it should be between 2 to 4 pages in length.  The rest of this section shows the formats of subsections as well as some general formatting information for tables, figures, references and equations.
 
-\subsection{Main Text}
-
-The font used for the main text should be Times New Roman (Times) and the font size should be 12.  The first line of all paragraphs should be indented by 0.25in, except for the first paragraph of each section, subsection, subsubsection etc. (the paragraph immediately after the header) where no indentation is needed.
-
-\subsection{Figures and Tables}
-In general, figures and tables should not appear before they are cited.  Place figure captions below the figures; place table titles above the tables.  If your figure has two parts, for example, include the labels ``(a)'' and ``(b)'' as part of the artwork.  Please verify that figures and tables you mention in the text actually exist.  make sure that all tables and figures are numbered as shown in Table \ref{units} and Figure 1.
-%sort out your own preferred means of inserting figures
-
-\begin{table}[htb]
-\centering
-\caption{UNITS FOR MAGNETIC PROPERTIES}
-\vspace*{6pt}
-\label{units}
-\begin{tabular}{ccc}\hline\hline
-Symbol & Quantity & Conversion from Gaussian \\ \hline
-\end{tabular}
-\end{table}
-
-\subsection{References}
-
-The list of cited references should appear at the end of the report, ordered alphabetically by the surnames of the first authors.  References cited in the main text should use Harvard (author, date) format.  When citing a section in a book, please give the relevant page numbers, as in \cite[p293]{budgen}.  When citing, where there are either one or two authors, use the names, but if there are more than two, give the first one and use ``et al.'' as in  , except where this would be ambiguous, in which case use all author names.
-
-You need to give all authors' names in each reference.  Do not use ``et al.'' unless there are more than five authors.  Papers that have not been published should be cited as ``unpublished'' \cite{euther}.  Papers that have been submitted or accepted for publication should be cited as ``submitted for publication'' as in \cite{futher} .  You can also cite using just the year when the author's name appears in the text, as in ``but according to Futher \citeyear{futher}, we \dots''.  Where an authors has more than one publication in a year, add `a', `b' etc. after the year.
-
-\section{Solution}
+\section{Solution} \label{sec:sol}
 
 This section presents the solutions to the problems in detail.  The design and implementation details should all be placed in this section.  You may create a number of subsections, each focussing on one issue.  
 
 This section should be between 4 to 7 pages in length.
 
-\section{Results}
-
-this section presents the results of the solutions.  It should include information on experimental settings.  The results should demonstrate the claimed benefits/disadvantages of the proposed solutions.
-
-This section should be between 2 to 3 pages in length.
-
-\section{Evaluation}
-
-This section should between 1 to 2 pages in length.
-
-\section{Conclusions}
-
-This section summarises the main points of this paper.  Do not replicate the abstract as the conclusion.  A conclusion might elaborate on the importance of the work or suggest applications and extensions.  This section should be no more than 1 page in length.
-
-The page lengths given for each section are indicative and will vary from project to project but should not exceed the upper limit.  A summary is shown in Table \ref{summary}.
-
-\begin{table}[htb]
-\centering
-\caption{SUMMARY OF PAGE LENGTHS FOR SECTIONS}
-\vspace*{6pt}
-\label{summary}
-\begin{tabular}{|ll|c|} \hline
-& \multicolumn{1}{c|}{\bf Section} & {\bf Number of Pages} \\ \hline
-I. & Introduction & 2--3 \\ \hline
-II. & Related Work & 2--3 \\ \hline
-III. & Solution & 4--7 \\ \hline
-IV. & Results & 2--3 \\ \hline
-V. & Evaluation & 1-2 \\ \hline
-VI. & Conclusions & 1 \\ \hline
-\end{tabular}
-\end{table}
-
+\section{Validity} \label{sec:val}
 
 \bibliography{projectpaper}
 
