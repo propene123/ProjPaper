@@ -78,9 +78,13 @@ The layout of the rest of this paper is as follows: section \ref{sec:lit} presen
 
 \section{Related Work} \label{sec:lit}
 \noindent
-In this section we provide an overview of the existing literature around Bayesian inference and surrogate modelling in the domain of numerical simulation of the shallow water equations. There are a very broad range of approaches to solving this problem therefore since out paper focuses on the statistical approaches rather than analytical approaches the literature review will reflect this.
+In this section we provide an overview of the existing literature around Bayesian inference and surrogate modelling in the domain of numerical simulation of complex physical phenomena. There are a very broad range of approaches to solving this problem therefore since out paper focuses on the statistical approaches rather than analytical approaches the literature review will reflect this.
 
 \subsection{Gaussian Process Emulation}
+\noindent
+One of the more common methods of surrogate modelling is the aforementioned kriging. This method requires the construction of a Gaussian process  emulator (GPE). A GPE operates under the assumption that the outputs of the model follows some multivariate Gaussian distribution. A set of known inputs and outputs can be used to train the GPE such that a set of basis functions are produced that can be easily evaluated to get an approximation of the model output (REF GPE BOOK). It has been shown that in complex models such as those for flood inundation, the empirical variation between predicted model outputs in the GPE is greater than the theoretical difference (REF Flood Paper) meaning that unexplained inaccuracies can be present in a GPE. However (REF Flood Paper) did also show that using a GPE allows for Bayesian inference to be used for model calibration in highly complex hydrodynamic models. The variation in GPE outputs when used for Bayesian calibration was demonstrated by (REF CFD Paper) to be of comparable accuracy to performing full model runs with a significant improvement in runtime, although this was done in the domain of particulate flow simulation which is still a complex numerical problem it may not be directly comparable to storm surge. (REF VALID PAPER) presented a series of diagnostics that can be applied to a GPE in order to determine its effectiveness at approximating model outputs. One of these metrics is the Mahalanobis Distance which allows measuring the number of standard deviations a point is away from the mean in a multidimensional case (REF Mahalanobis). These metrics are significant as they compare the GPE output variation with that of the actual model rather than reality, this is important for out application as our GPE should approximate the model specifically rather than the underlying physical processes.
+
+\subsection{Polynomial Chaos Expansion}
 \noindent
 
 
