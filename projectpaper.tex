@@ -93,11 +93,36 @@ Polynomial chaos expansion is another popular method for surrogate modelling. In
 Due to the success of the previous two methods recent developments have been made in the literature to try and create hybrid surrogate models to capture the advantages of the different techniques. The obvious hybrid is that of polynomial chaos and kriging, known as PC-Kriging (REF PC-Kriging paper). PC-Kriging uses a polynomial chaos expansion to approximate the global behaviour of the model and kriging (GPE) is used to simulate the local variations that can occur. The results obtained in the paper suggest that PC-Kriging is at least as accurate as the constituent surrogates. A similar approach was also presented by (REF PC-kriging 2) , their approach was to use LAR to select the best polynomials for a PC surrogate and then use these polynomials during the regression process in the GPE. This paper supported the findings that the hybrid method outperforms the constituent methods, however it was noted that the improvements varied widely depending on what application it was being applied to, this is motivation to apply this technique to our storm surge model. An extension was proposed that uses an additional Bayesian framework to create a sparse representation of model outputs to further improve accuracy (REF PC-K ext). The results show that the accuracy is vastly improved when performing fewer evaluations of the original model. However as previously stated for tsunami sea level models only 125 model evaluations were required (REF tsunami) to get high accuracy and at this point the Bayesian framework extension from (REF PC-K ext) does not provide any greater accuracy than plain PC-Kriging. PC-Kriging and its extensions have not been applied to storm surge modelling in the literature with most approaches focusing on the individual methods and seeking improvements from the formulation of the original model or Bayesian inference procedure instead, for this reason we have decided to apply PC-Kriging to parameter calibration in this paper. Other hybrid techniques exist in the literature for surrogate modelling, however these usually make assumptions and are specific to the physical process being simulated. Due to the lack of these specialised methods for storm surge modelling we have not addressed these.
 
 \section{Solution} \label{sec:sol}
+\noindent
+This section provides a description of the proposed solution and methodology in this project. This includes the formulation of the surrogate models and the proposed experiments and analysis that will be carried out on them. First a brief description of the datasets, programming languages, and other software packages to be used is presented.
+\subsection{Software Tools and Datasets}
+\noindent
+The full storm surge model will be created using the GeoClaw package (REF Geoclaw)(REF Leveque)(REF ClawPack). This software was chosen due to its adaptive mesh refinement algorithms that allow for more accurate and faster forward model runs. To formulate the GPE we will used the GPy Python package, this package allows easy construction of a GPE and application of kriging. The PC surrogate and PC-Kriging hybrid model will be implemented in C due to its fast execution speed. Data visualisation and plotting will be performed using the Matplotlib Python package due to its flexible nature.
 
-This section presents the solutions to the problems in detail.  The design and implementation details should all be placed in this section.  You may create a number of subsections, each focussing on one issue.  
+For this project we will evaluate the model and surrogates on data obtained on Hurricane Ike (2008). The storm data will be sourced from the Automated tropical Cyclone Forecasting System (ATCF) and the regions bathymetry and measured sea elevation will be sourced from the National Oceanic and Atmospheric Administration (NOAA).
+\subsection{Parameter Inference Procedure}
+\noindent
+The Bayesian inference procedure used is based on (REF tsunami)(REF Bayes book). This involved first formulating the full model as the product of conditional probability distributions and a likelihood function. We can then describe the model parameters in terms of probability distributions, the priors are constructed using whatever information we have available at the start. Then using model or surrogate runs we can compare results with real data and employ Bayes' rule to calculate the posterior distributions until we have the parameters to a desired degree of accuracy. The full procedure is as follows:
 
-This section should be between 4 to 7 pages in length.
-
+$\eta$ is the vector of real sea level rises for each sensor from the NOAA data. Let $n$ be the vector of model parameters $(n_1,n_2,n_3)$, the three friction coefficients at varying water depths. Finally let $M$ represent the forward model evaluation as a function such that $\eta \approx M(n)$. Bayes' rule tells us that:
+\begin{equation}
+	P(n|\eta) \propto L(\eta|n)q(n)
+\end{equation}
+where $L$ is the likelihood function of elevations $\eta$ given $n$ and $q(n)$ is the prior distribution of $n$. $L$ can be formulated using the discrepancy between the real sea level rise and rise predicted by the model i.e. $\epsilon=\eta-M$. All errors at each sea level sensor are assumed to be i.i.d. with their own probability density function $P_\epsilon$. Therefore $L$ can be described as the product of probability for each sensor:
+\begin{equation}
+	L(\eta|n)=\prod_i P_\epsilon(\eta_i - M_i(n))
+\end{equation}
+As in (REF tsunami) we assume all $\epsilon_i$ are normally distributes such that $\epsilon\sim N(0,\sigma^2)$. Therefore:
+\begin{equation}
+	L(\eta|n) = \frac{1}{\sqrt{2\pi\sigma^2}}\prod_i \exp \left(   \frac{-(\eta_i-M_i(n))^2}{2\sigma^2}  \right)
+\end{equation}
+It is unreasonable to assume that the variance of errors will be the same at all the sensors therefore Bayes' rule must be applied separately at each sensor with its own $\sigma^2$. The variance is also unknown and therefore will be used as a model parameter like $n$. This gives a full formulation of Bayes' rule as:
+\begin{equation}
+	P(n_1,n_2,n_3,\sigma^2_i|\eta_i)\propto \frac{1}{\sqrt{2\pi\sigma^2}}\prod_i\exp\left(
+	\frac{-(\eta_i - M_i(n))^2}{2\sigma^2}
+	\right)q(\sigma^2)q(n_1)q(n_2)q(n_3)
+\end{equation}
+For prior distributions all $n_i$ are assumed to be uniformly distributed and the variance is assumed to be a Jeffrey's distribution as we do not have any useful information about it (REF tsunami)(REF Bayes book).
 \section{Validity} \label{sec:val}
 
 \bibliography{projectpaper}
