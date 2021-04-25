@@ -128,11 +128,11 @@ For prior distributions all $n_i$ are assumed to be uniformly distributed and th
 \noindent
 Our GPE is based on the approach taken by (REF PHD). A more thorough description is given in (REF GPE BOOK). Let $\bm{X}$ be a set of training model inputs and $\bm{f}$ be the set of true model outputs for $\bm{X}$ with $\bm{f}_*$ be the predicted model outputs from the GPE then:
 \begin{equation}\label{eqn:gpe}
-	\bm{f_*}|\bm{f}\sim N(\bm{\mu}_* + \Sigma_*^T\Sigma^{-1}(\bm{f}-\bm{\mu}),
+	\bm{f_*}|\bm{f}\sim \mathcal{N}(\bm{\mu}_* + \Sigma_*^T\Sigma^{-1}(\bm{f}-\bm{\mu}),
 	\Sigma_{**}-\Sigma_*^T\Sigma^{-1}\Sigma_*)
 \end{equation}
-where $\bm{\mu}_*$ is the mean of predicted outputs, $\Sigma_**$ is the covariance matrix for the predicted outputs, and $\Sigma_*$ is the covariance matrix between the training and predicted outputs. $\bm{\mu}$ and $\bm{\mu}_*$ are derived from a matrix of basis functions from $\bm{X}$ and a vector of regression coefficients $\bm{\beta}$ such that:
-\begin{align}
+where $\bm{\mu}_*$ is the mean of predicted outputs, $\Sigma_{**}$ is the covariance matrix for the predicted outputs, and $\Sigma_*$ is the covariance matrix between the training and predicted outputs. $\bm{\mu}$ and $\bm{\mu}_*$ are derived from a matrix of basis functions from $\bm{X}$ and a vector of regression coefficients $\bm{\beta}$ such that:
+\begin{align}\label{eqn:mew}
 	\bm{\mu} &= g(\bm{X})^T\cdot \bm{\beta} \\
 	\bm{\mu}_* &= g(\bm{X}_*)^T\cdot \bm{\beta}
 \end{align}
@@ -140,7 +140,7 @@ The covariance matrices are constructed using the covariance function:
 \begin{equation}
 	k(x,x')=\sigma^2\exp\left( -\frac{(x-x')^2}{2l^2}\right)
 \end{equation}
-where $l$ is correlation length of the outputs. $\bm{\beta}$,$\sigma^2$,$l$ are hyperparameters in the model represented as $\bm{\theta}$. These hyperparameters are calculated by maximising the log likelihood given as:
+where $l$ is correlation length of the outputs. $\bm{\beta}$, $\sigma^2$, $l$ are hyperparameters in the model represented as $\bm{\theta}$. These hyperparameters are calculated by maximising the log likelihood given as:
 \begin{equation}
 	\log L(\bm{f}|\bm{X},\bm{\theta})=-\frac{1}{2}\log|\Sigma|-\frac{1}{2}(\bm{f}-\bm{\mu})^T
 	\Sigma^{-1}(\bm{f}-\bm{\mu})-\frac{N}{2}\log2\pi
@@ -148,11 +148,11 @@ where $l$ is correlation length of the outputs. $\bm{\beta}$,$\sigma^2$,$l$ are 
 where $N$ is the number of basis functions. After calculating these terms they can used in Eq.~\eqref{eqn:gpe} to cheaply predict model outputs.
 \subsubsection{PC-Surrogate}
 \noindent
-Our PC-Surrogate is based on the formulation presented in (REF tsunami). We define $U$ to be a function on space $\bm{x}$, time $t$, and $\zeta$ which is the vector of random variables representing our three friction coefficients, once again normally distributed. Therefore out PC-Surrogate is defined as:
+Our PC-Surrogate is based on the formulation presented in (REF tsunami). We define $U$ to be a function on space $\bm{x}$, time $t$, and $\zeta$ which is the vector of random variables representing our three friction coefficients, once again normally distributed. Therefore our PC-Surrogate is defined as:
 \begin{equation}
 	U(\bm{x},t,\zeta)=\sum_{k=0}^{P}U_k(\bm{x},t)\Psi_k(\zeta)
 \end{equation}
-Where $\Psi_k$ represents the elements of the orthogonal basis of some probability space on $\zeta$ and $U_k$ are polynomial coefficients and $P$ is the truncated length of the series. In order to calculate the polynomial coefficients we use a a non-intrusive approach called non-intrusive spectral projection as it allows us to re-use the GeoClaw model without modification simplifying our implementation. A more complete description if given in (REF tsunami), we define $U_k$ as:
+Where $\Psi_k$ represents the elements of the orthogonal basis of some probability space on $\zeta$ and $U_k$ are polynomial coefficients and $P$ is the truncated length of the series. In order to calculate the polynomial coefficients we use a a non-intrusive approach called non-intrusive spectral projection (NISP) as it allows us to re-use the GeoClaw model without modification simplifying our implementation. A more complete description if given in (REF tsunami), we define $U_k$ as:
 \begin{align}
 	U_k(\bm{x},t) &= \sum_{q}\mathcal{P}_{kq}U(\bm{x},t,\zeta_q) \\
 	\mathcal{P}_{kq} &= \frac{\Psi_k(\zeta_q)\omega_q}{\left<\Psi_k, \Psi_k \right>}
@@ -160,6 +160,11 @@ Where $\Psi_k$ represents the elements of the orthogonal basis of some probabili
 Where $\left<\Psi_i,\Psi_j \right>$ is the inner product of the probability space, $U(\bm{x},t,\zeta_q)$ is the result of a full model run with friction coefficients set at $\zeta_q$. $\zeta_q$ and $\omega_q$ are carefully chosen to be the points and weights of a numerical quadrature (numerical integration).
 \subsubsection{PC-Kriging hybrid}
 \noindent
+Our PC-Kriging model is based on the description given in (REF PC-Kriging paper) called Sequential PC-Kriging. This formulation is very similar to our GPE apart from instead of using Eq.~\eqref{eqn:mew} we define $\bm{\mu}$ as:
+\begin{equation}
+	\bm{\mu} = \sum_{k=0}^{P}U_k(\bm{x},t)\Psi_k(\zeta)
+\end{equation}
+which is a representation of the mean using polynomial chaos. The main difference being instead of using NISP we use the LARS algorithm (REF LARS) to generate the polynomial coefficients. Eq.~\eqref{eqn:mew} is then plugged into our GPE model which is calibrated by once again maximising Eq.~\eqref{eqn:gpe}. This should allow for both the global behaviour of the full model to be approximated and for the local variations to be approximated too, rather than one or the other as with the two previous models.
 \section{Validity} \label{sec:val}
 
 \bibliography{projectpaper}
