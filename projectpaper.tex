@@ -126,7 +126,27 @@ For prior distributions all $n_i$ are assumed to be uniformly distributed and th
 \subsection{Surrogate Models}
 \subsubsection{Gaussian Process Emulator}
 \noindent
-
+Our GPE is based on the approach taken by (REF PHD). A more thorough description is given in (REF GPE BOOK). Let $\bm{X}$ be a set of training model inputs and $\bm{f}$ be the set of true model outputs for $\bm{X}$ with $\bm{f}_*$ be the predicted model outputs from the GPE then:
+\begin{equation}\label{eqn:gpe}
+	\bm{f_*}|\bm{f}\sim N(\bm{\mu}_* + \Sigma_*^T\Sigma^{-1}(\bm{f}-\bm{\mu}),
+	\Sigma_{**}-\Sigma_*^T\Sigma^{-1}\Sigma_*)
+\end{equation}
+where $\bm{\mu}_*$ is the mean of predicted outputs, $\Sigma_**$ is the covariance matrix for the predicted outputs, and $\Sigma_*$ is the covariance matrix between the training and predicted outputs. $\bm{\mu}$ and $\bm{\mu}_*$ are derived from a matrix of basis functions from $\bm{X}$ and a vector of regression coefficients $\bm{\beta}$ such that:
+\begin{align}
+	\bm{\mu} &= g(\bm{X})^T\cdot \bm{\beta} \\
+	\bm{\mu}_* &= g(\bm{X}_*)^T\cdot \bm{\beta}
+\end{align}
+The covariance matrices are constructed using the covariance function:
+\begin{equation}
+	k(x,x')=\sigma^2\exp\left( -\frac{(x-x')^2}{2l^2}\right)
+\end{equation}
+where $l$ is correlation length of the outputs. $\bm{\beta}$,$\sigma^2$,$l$ are hyperparameters in the model represented as $\bm{\theta}$. These hyperparameters are calculated by maximising the log likelihood given as:
+\begin{equation}
+	\log L(\bm{f}|\bm{X},\bm{\theta})=-\frac{1}{2}\log|\Sigma|-\frac{1}{2}(\bm{f}-\bm{\mu})^T
+	\Sigma^{-1}(\bm{f}-\bm{\mu})-\frac{N}{2}\log2\pi
+\end{equation}
+where $N$ is the number of basis functions. After calculating these terms they can used in Eq.~\eqref{eqn:gpe} to cheaply predict model outputs.
+\subsubsection{PC-Surrogate}
 \section{Validity} \label{sec:val}
 
 \bibliography{projectpaper}
