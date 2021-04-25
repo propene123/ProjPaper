@@ -8,7 +8,7 @@
 \citationmode{abbr}
 \bibliographystyle{agsm}
 
-\title{Inverse Uncertainty Quantification Methods for Numerical Storm Surge Models}
+\title{Bayesian Inference of Parameters for Numerical Storm Surge Models}
 \author{} % leave; your name goes into \student{}
 \student{Benjamin Russell}
 \supervisor{Tobias Weinzierl}
@@ -39,7 +39,7 @@ When severe storms hit coastal regions, the high winds and atmospheric pressure 
 
 In this paper we focus on using a range of different techniques that fall under the umbrella of surrogate modelling. This is the use of less accurate models that are less computationally expensive to run then the full model (REF QUIRANTE). The remainder of this section will give an overview of storm surge modelling, surrogate modelling, inverse uncertainty quantification, and model calibration as well as the motivations for comparing the various techniques.
 
-\subsection{Background}
+\subsection{Background}\label{sec:back}
 \noindent
 Simulating storm surges is often done using 2D shallow water equations given as (REF EQUATION PAPER).
 \begin{equation}
@@ -95,6 +95,8 @@ Due to the success of the previous two methods recent developments have been mad
 \section{Solution} \label{sec:sol}
 \noindent
 This section provides a description of the proposed solution and methodology in this project. This includes the formulation of the surrogate models and the proposed experiments and analysis that will be carried out on them. First a brief description of the datasets, programming languages, and other software packages to be used is presented.
+
+We chose to use the three surrogate modelling methods outlined below as there has been no direct comparison in the context of complex hydrodynamic simulations such as hurricane storm surge, and there has been no application of PC-Kriging to such simulations either.
 \subsection{Software Tools and Datasets}
 \noindent
 The full storm surge model will be created using the GeoClaw package (REF Geoclaw)(REF Leveque)(REF ClawPack). This software was chosen due to its adaptive mesh refinement algorithms that allow for more accurate and faster forward model runs. To formulate the GPE we will used the GPy Python package, this package allows easy construction of a GPE and application of kriging. The PC surrogate and PC-Kriging hybrid model will be implemented in C due to its fast execution speed. Data visualisation and plotting will be performed using the Matplotlib Python package due to its flexible nature.
@@ -122,7 +124,7 @@ It is unreasonable to assume that the variance of errors will be the same at all
 	\frac{-(\eta_i - M_i(n))^2}{2\sigma^2}
 	\right)q(\sigma^2)q(n_1)q(n_2)q(n_3)
 \end{equation}
-For prior distributions all $n_i$ are assumed to be uniformly distributed and the variance is assumed to be a Jeffrey's prior (REF Jeff Paper) as we do not have any useful information about it (REF Sraj paper).
+For prior distributions all $n_i$ are assumed to be uniformly distributed and the variance is assumed to be a Jeffrey's prior (REF Jeff Paper) as we do not have any useful information about it (REF Sraj paper). In order to sample the posterior $P(n_1,n_2,n_3,\sigma^2_i|\eta_i)$ we use the MCMC algorithm mentioned in section I.\ref{sec:back}
 \subsection{Surrogate Models}
 \subsubsection{Gaussian Process Emulator}
 \noindent
@@ -165,8 +167,16 @@ Our PC-Kriging model is based on the description given in (REF PC-Kriging paper)
 	\bm{\mu} = \sum_{k=0}^{P}U_k(\bm{x},t)\Psi_k(\zeta)
 \end{equation}
 which is a representation of the mean using polynomial chaos. The main difference being instead of using NISP we use the LARS algorithm (REF LARS) to generate the polynomial coefficients. Eq.~\eqref{eqn:mew} is then plugged into our GPE model which is calibrated by once again maximising Eq.~\eqref{eqn:gpe}. This should allow for both the global behaviour of the full model to be approximated and for the local variations to be approximated too, rather than one or the other as with the two previous models.
-\section{Validity} \label{sec:val}
-
+\subsection{Proposed Analysis}
+\noindent
+To compare our three surrogate models we will be assessing them on two measures, the accuracy of the inferred friction coefficients obtained when used in the full model, and the runtime taken to perform the inference against the number of runs of the full model when training the surrogates. We will also present the inferred distribution of friction coefficients for each surrogate too.
+\subsubsection{Accuracy}
+\noindent
+The accuracy metric we have selected is the normalised root mean square error $E$ defined as:
+\begin{equation}
+	E=\sqrt{\frac{\sum_{i}\int(M_i-\eta_i)^2dt}{\sum_{i}\int\eta^2_idt}}
+\end{equation}
+where $M_i$ is the sea level rise from the model and $\eta_i$ is the observed rise at each NOAA sensor. The error is integrated over a 24 hour time period provided in the NOAA data.
 \bibliography{projectpaper}
 
 
