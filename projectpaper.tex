@@ -147,6 +147,19 @@ where $l$ is correlation length of the outputs. $\bm{\beta}$,$\sigma^2$,$l$ are 
 \end{equation}
 where $N$ is the number of basis functions. After calculating these terms they can used in Eq.~\eqref{eqn:gpe} to cheaply predict model outputs.
 \subsubsection{PC-Surrogate}
+\noindent
+Our PC-Surrogate is based on the formulation presented in (REF tsunami). We define $U$ to be a function on space $\bm{x}$, time $t$, and $\zeta$ which is the vector of random variables representing our three friction coefficients, once again normally distributed. Therefore out PC-Surrogate is defined as:
+\begin{equation}
+	U(\bm{x},t,\zeta)=\sum_{k=0}^{P}U_k(\bm{x},t)\Psi_k(\zeta)
+\end{equation}
+Where $\Psi_k$ represents the elements of the orthogonal basis of some probability space on $\zeta$ and $U_k$ are polynomial coefficients and $P$ is the truncated length of the series. In order to calculate the polynomial coefficients we use a a non-intrusive approach called non-intrusive spectral projection as it allows us to re-use the GeoClaw model without modification simplifying our implementation. A more complete description if given in (REF tsunami), we define $U_k$ as:
+\begin{align}
+	U_k(\bm{x},t) &= \sum_{q}\mathcal{P}_{kq}U(\bm{x},t,\zeta_q) \\
+	\mathcal{P}_{kq} &= \frac{\Psi_k(\zeta_q)\omega_q}{\left<\Psi_k, \Psi_k \right>}
+\end{align}
+Where $\left<\Psi_i,\Psi_j \right>$ is the inner product of the probability space, $U(\bm{x},t,\zeta_q)$ is the result of a full model run with friction coefficients set at $\zeta_q$. $\zeta_q$ and $\omega_q$ are carefully chosen to be the points and weights of a numerical quadrature (numerical integration).
+\subsubsection{PC-Kriging hybrid}
+\noindent
 \section{Validity} \label{sec:val}
 
 \bibliography{projectpaper}

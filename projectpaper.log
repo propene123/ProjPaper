@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.16)  25 APR 2021 13:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.16)  25 APR 2021 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -314,18 +314,18 @@ Overfull \hbox (6.6542pt too wide) in paragraph at lines 47--49
 ari-ables ac-cord-ing to the three-dimensional
  []
 
-[2] [3] [4] [5] [6] (./projectpaper.bbl) [7] (./projectpaper.aux)
+[2] [3] [4] [5] [6] [7] (./projectpaper.bbl) [8] (./projectpaper.aux)
 Package rerunfilecheck Info: File `projectpaper.out' has not changed.
 (rerunfilecheck)             Checksum: F2A7DD5912E9853F49BA8CA5604D7D1A;949.
  ) 
 Here is how much of TeX's memory you used:
- 5913 strings out of 479383
- 85970 string characters out of 5875830
+ 5917 strings out of 479383
+ 86015 string characters out of 5875830
  393067 words of memory out of 5000000
  22869 multiletter control sequences out of 15000+600000
  424107 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,9n,85p,2294b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,9n,85p,2294b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
@@ -338,10 +338,10 @@ y10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/s
 hare/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/t
 ype1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on projectpaper.pdf (7 pages, 161448 bytes).
+Output written on projectpaper.pdf (8 pages, 166919 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
