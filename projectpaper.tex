@@ -1,14 +1,17 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage{times}
 \usepackage{durhampaper}
-\usepackage{harvard}
+%\usepackage{harvard}
+\usepackage[comma]{natbib}
+\usepackage{har2nat}
 \usepackage{commath,amsmath,amssymb,amsfonts}
 \usepackage{bm}
-\usepackage{hyperref}
-\citationmode{abbr}
-\citationstyle{dcu}
+\usepackage{mathptmx}
+\usepackage[hidelinks]{hyperref}
+%\citationmode{abbr}
+%\citationstyle{dcu}
 \bibliographystyle{dcu}
-
+\setcitestyle{citesep={;}}
 \let\OLDthebibliography\thebibliography
 \renewcommand\thebibliography[1]{
 	\OLDthebibliography{#1}
@@ -21,7 +24,7 @@
 \author{} % leave; your name goes into \student{}
 \student{Benjamin Russell}
 \supervisor{Tobias Weinzierl}
-\degree{MEng Computer Science}
+%\degree{MEng Computer Science}
 
 \date{}
 
@@ -188,7 +191,7 @@ The accuracy metric we have selected is the normalised root mean square error $E
 where $M_i$ is the sea level rise from the model and $\eta_i$ is the observed rise at each NOAA sensor. The error is integrated over a 24 hour time period provided in the NOAA data.
 \section{Validity}\label{sec:val}
 \noindent
-In order to support the validity of the research problem we have clearly presented data in Section~\ref{sec:intro} to show that the damage caused by storm surges warrants investigation into methods to simulate said damages. Within the Triad this data was presented to other members who agreed that this data was valid and supported the research problem. The related work presented in Section~\ref{sec:lit} is clearly relevant to the research question as it is an overview of the literature surrounding the field of surrogate modelling and parameter inference. All the work cited in the related work review comes published articles from reputable journals and has therefore gone through the rigorous peer review systems employed by said journals. The proposed methodology is valid as it uses models based of those in the literature, which are valid, and proposes an extension that although untested in this domain has shown valid results in similar domains as evidenced in Section~\ref{sec:lit}. The proposed analysis of the models will produce valid results as it uses metrics that have been used to compare similar models in the literature, these metrics have produced valid results as evidenced by the results being published in peer reviewed journal articles. 
+In order to support the validity of the research problem we have clearly presented data in Section~\ref{sec:intro} to show that the damage caused by storm surges warrants investigation into methods to simulate said damages. Within the Triad this data was presented to other members who agreed that this data was valid and supported the research problem. The related work presented in Section~\ref{sec:lit} is clearly relevant to the research question as it is an overview of the literature surrounding the field of surrogate modelling and parameter inference. All the work cited in the related work review comes published articles from reputable journals and has therefore gone through the rigorous peer review systems employed by said journals. The proposed methodology is valid as it uses models based of those in the literature, which are valid, and proposes an extension that although untested in this domain has shown valid results in similar domains as evidenced in Section~\ref{sec:lit}. The proposed analysis of the models will produce valid results as it uses metrics that have been used to compare similar models in the literature, these metrics have produced valid results as evidenced by the results being published in peer reviewed journal articles. To ensure the results are valid upon the completion of the project they will be compared with parameter estimates and uncertainties from similar studies such as those by \citeasnoun{tsunami} to ensure that they are not massively different from current values in the literature.
 \section{Results}
 \noindent
 \section{Evaluation}
