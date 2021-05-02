@@ -1,0 +1,21 @@
+
+\definetitlestyle{KekStyle}{width=0.9\textwidth, roundedcorners=20, linewidth=5pt}{\begin{scope}[line width=10pt, rounded corners=\titleroundedcorners]\draw[color=blocktitlebgcolor, fill=titlebgcolor](\titleposleft,\titleposbottom) rectangle (\titleposright,\titlepostop);\end{scope}}
+
+
+\makeatletter
+\renewcommand\TP@maketitle{
+	\centering
+	\begin{minipage}[b]{0.8\linewidth}
+		\centering
+		\color{titlefgcolor}
+		{\bfseries \Huge \sc \@title \par}
+		\vspace*{1em}
+		{\huge \@author \par}
+		\vspace*{1em}
+		{\LARGE \@institute}
+	\end{minipage}%
+	\tikz[remember picture,overlay]\node[anchor=south east,xshift=0.5\linewidth,yshift=-0.3cm,inner sep=0pt] {%
+		\@titlegraphic
+	};
+}
+\makeatother

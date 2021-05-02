@@ -1,0 +1,69 @@
+\documentclass[20pt,a1paper,landscape]{tikzposter}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{adjustbox}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tartu}
+\usepackage[backend=biber,style=numeric, sorting=none]{biblatex}
+
+\addbibresource{refs.bib}
+
+% set theme parameters
+\tikzposterlatexaffectionproofoff
+\usetheme{UniTartuTheme}
+\usecolorstyle{UniTartuStyle}
+
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\renewcommand{\vec}[1]{\bm{#1}}
+\newcommand{\Tr}{\text{Tr}}
+\usepackage[T1]{fontenc}
+
+\title{Bayesian Inference of Parameters for Numerical Storm Surge Models}
+\author{\textbf{Benjamin Russell}\textsuperscript{1}}
+\institute{\textsuperscript{1}University of Durham\\}
+\titlegraphic{\includegraphics[width=0.12\linewidth]{logo.png}}
+
+% begin document
+\begin{document}
+	\maketitle
+	\centering
+	\begin{columns}
+		\column{0.32}
+		\block{Background}{
+			In the United States of America coastal communities suffer huge yearly losses from flooding. One of the causes of such flooding is storm surges, this is the sea level rise caused by tropical hurricanes and cyclones. Studies have shown that between 1963 and 2012 49\% of all deaths from hurricanes in the US were caused by the storm surge~\cite{deaths}. The economic impact has also been huge with estimates showing that with no further improvements to coastal flood defenses by 2050 yearly losses from storm surge flooding could exceed US\$1trillion~\cite{costs}.
+		}
+		\block{Model}{
+		}
+		\block{Inverse Problem}{
+		}
+		\column{0.36}
+		\block{Results}{
+		}
+		
+		\column{0.32}
+		\block{Comparison}{
+		}
+		
+		\block{Remarks}{
+		}
+		
+		\block{Acknowledgements}{
+		}
+		
+		\block{References}{
+			\vspace{-1em}
+			\begin{footnotesize}
+				\printbibliography[heading=none]
+			\end{footnotesize}
+		}
+	\end{columns}
+\end{document} 

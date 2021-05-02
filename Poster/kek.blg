@@ -1,0 +1,5 @@
+[0] Config.pm:312> INFO - This is Biber 2.15
+[0] Config.pm:315> INFO - Logfile is 'kek.blg'
+[69] biber:330> INFO - === Sun May  2, 2021, 00:24:04
+[128] Utils.pm:411> ERROR - Cannot find 'kek.bcf'!
+[128] Biber.pm:132> INFO - ERRORS: 1

@@ -10,7 +10,7 @@
 \usepackage[hidelinks]{hyperref}
 %\citationmode{abbr}
 %\citationstyle{dcu}
-\bibliographystyle{dcu}
+\bibliographystyle{agsm}
 \setcitestyle{citesep={;}}
 \let\OLDthebibliography\thebibliography
 \renewcommand\thebibliography[1]{
@@ -126,7 +126,7 @@ where $L$ is the likelihood function of elevations $\eta$ given $n$ and $q(n)$ i
 \begin{equation}
 	L(\eta|n)=\prod_i P_\epsilon(\eta_i - M_i(n))
 \end{equation}
-As in \citeasnoun{tsunami} we assume all $\epsilon_i$ are normally distributes such that $\epsilon\sim N(0,\sigma^2)$. Therefore:
+As in \citeasnoun{tsunami} we assume all $\epsilon_i$ are normally distributed such that $\epsilon\sim N(0,\sigma^2)$. Therefore:
 \begin{equation}
 	L(\eta|n) = \frac{1}{\sqrt{2\pi\sigma^2}}\prod_i \exp \left(   \frac{-(\eta_i-M_i(n))^2}{2\sigma^2}  \right)
 \end{equation}
@@ -175,10 +175,10 @@ Where $\left<\Psi_i,\Psi_j \right>$ is the inner product of the probability spac
 \subsubsection{PC-Kriging hybrid}
 \noindent
 Our PC-Kriging model is based on the description given by \citeasnoun{pckriging} called Sequential PC-Kriging. This formulation is very similar to our GPE except instead of using Eq.~\eqref{eqn:mew} we define $\bm{\mu}$ as:
-\begin{equation}
+\begin{equation}\label{eqn:nmew}
 	\bm{\mu} = \sum_{k=0}^{P}U_k(\bm{x},t)\Psi_k(\zeta)
 \end{equation}
-which is a representation of the mean using polynomial chaos. The main difference being instead of using NISP we use the LARS algorithm~\cite{lar} to generate the polynomial coefficients. Eq.~\eqref{eqn:mew} is then plugged into our GPE model which is calibrated by once again maximising Eq.~\eqref{eqn:gpe}. This should allow for both the global behaviour of the full model to be approximated and for the local variations to be approximated too, rather than one or the other as with the two previous models.
+which is a representation of the mean using polynomial chaos. The main difference being instead of using NISP we use the LARS algorithm~\cite{lar} to generate the polynomial coefficients. Eq.~\eqref{eqn:nmew} is then plugged into our GPE model which is calibrated by once again maximising Eq.~\eqref{eqn:gpe}. This should allow for both the global behaviour of the full model to be approximated and for the local variations to be approximated too, rather than one or the other as with the two previous models.
 \subsection{Proposed Analysis}
 \noindent
 To compare our three surrogate models we will be assessing them on two measures, the accuracy of the inferred friction coefficients obtained when used in the full model, and the runtime taken to perform the inference against the number of runs of the full model when training the surrogates. We will also present the inferred distribution of friction coefficients for each surrogate and the uncertainty from the MCMC sampling.
@@ -191,7 +191,7 @@ The accuracy metric we have selected is the normalised root mean square error $E
 where $M_i$ is the sea level rise from the model and $\eta_i$ is the observed rise at each NOAA sensor. The error is integrated over a 24 hour time period provided in the NOAA data.
 \section{Validity}\label{sec:val}
 \noindent
-In order to support the validity of the research problem we have clearly presented data in Section~\ref{sec:intro} to show that the damage caused by storm surges warrants investigation into methods to simulate said damages. Within the Triad this data was presented to other members who agreed that this data was valid and supported the research problem. The related work presented in Section~\ref{sec:lit} is clearly relevant to the research question as it is a comprehensive overview of the literature surrounding the field of surrogate modelling and parameter inference. All the work cited in the related work review comes published articles from reputable journals and has therefore gone through the rigorous peer review systems employed by said journals. The proposed methodology is valid as it uses models based of those in the literature, which are valid, and proposes an extension that although untested in this domain has shown valid results in similar domains as evidenced in Section~\ref{sec:lit}. The proposed analysis of the models will produce valid results as it uses metrics that have been used to compare similar models in the literature, these metrics have produced valid results as evidenced by the results being published in peer reviewed journal articles. To ensure the results are valid upon the completion of the project they will be compared with parameter estimates and uncertainties from similar studies such as those by \citeasnoun{tsunami} to ensure that they are not massively different from current values in the literature.
+In order to support the validity of the research problem we have clearly presented data in Section~\ref{sec:intro} to show that the damage caused by storm surges warrants investigation into methods to simulate said damages. Within the triad this data was presented to other members who agreed that this data was valid and supported the research problem. The related work presented in Section~\ref{sec:lit} is clearly relevant to the research question as it is a comprehensive overview of the literature surrounding the field of surrogate modelling and parameter inference. All the work cited in the related work review comes published articles from reputable journals and has therefore gone through the rigorous peer review systems employed by said journals. The proposed methodology is valid as it uses models based of those in the literature, which are valid, and proposes an extension that although untested in this domain has shown valid results in similar domains as evidenced in Section~\ref{sec:lit}. The proposed analysis of the models will produce valid results as it uses metrics that have been used to compare similar models in the literature, these metrics have produced valid results as evidenced by the results being published in peer reviewed journal articles. To ensure the results are valid upon the completion of the project they will be compared with parameter estimates and uncertainties from similar studies such as those by \citeasnoun{tsunami} to ensure that they are not massively different from current values in the literature.
 \section{Results}
 \noindent
 \section{Evaluation}

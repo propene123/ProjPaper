@@ -2,186 +2,170 @@
 
 \harvarditem{Bastos \harvardand\ O’Hagan}{2009}{valid}
 Bastos, L.~S. \harvardand\ O’Hagan, A.  \harvardyearleft
-  2009\harvardyearright .
-\newblock Diagnostics for gaussian process emulators, {\em Technometrics} {\bf
-  51}(4):~425--438.
+  2009\harvardyearright , `Diagnostics for gaussian process emulators', {\em
+  Technometrics} {\bf 51}(4),~425--438.
 
 \harvarditem[Berger et~al.]{Berger, George, LeVeque \harvardand\
   Mandli}{2011}{geoclaw}
 Berger, M.~J., George, D.~L., LeVeque, R.~J. \harvardand\ Mandli, K.~T.
-  \harvardyearleft 2011\harvardyearright .
-\newblock The {GeoClaw} software for depth-averaged flows with adaptive
-  refinement, {\em Adv. Water Res.} {\bf 34}:~1195--1206.
+  \harvardyearleft 2011\harvardyearright , `The {GeoClaw} software for
+  depth-averaged flows with adaptive refinement', {\em Adv. Water Res.} {\bf
+  34},~1195--1206.
 \newline\harvardurl{\url{www.clawpack.org/links/papers/awr11}}
 
 \harvarditem{Blatman \harvardand\ Sudret}{2011}{lar}
-Blatman, G. \harvardand\ Sudret, B.  \harvardyearleft 2011\harvardyearright .
-\newblock Adaptive sparse polynomial chaos expansion based on least angle
-  regression, {\em Journal of Computational Physics} {\bf 230}(6):~2345--2367.
+Blatman, G. \harvardand\ Sudret, B.  \harvardyearleft 2011\harvardyearright ,
+  `Adaptive sparse polynomial chaos expansion based on least angle regression',
+  {\em Journal of Computational Physics} {\bf 230}(6),~2345--2367.
 
 \harvarditem[Burguete et~al.]{Burguete, García-Navarro, Murillo \harvardand\
   García-Palacín}{2007}{manning}
 Burguete, J., García-Navarro, P., Murillo, J. \harvardand\ García-Palacín,
-  I.  \harvardyearleft 2007\harvardyearright .
-\newblock Analysis of the friction term in the one-dimensional shallow-water
-  model, {\em Journal of Hydraulic Engineering} {\bf 133}(9):~1048--1063.
+  I.  \harvardyearleft 2007\harvardyearright , `Analysis of the friction term
+  in the one-dimensional shallow-water model', {\em Journal of Hydraulic
+  Engineering} {\bf 133}(9),~1048--1063.
 
 \harvarditem{{Clawpack Development Team}}{2020}{clawpack}
-{Clawpack Development Team}  \harvardyearleft 2020\harvardyearright .
-\newblock Clawpack software.
+{Clawpack Development Team}  \harvardyearleft 2020\harvardyearright , `Clawpack
+  software'.
 \newblock Version 5.7.1.
 \newline\harvardurl{http://www.clawpack.org}
 
 \harvarditem[García-Navarro et~al.]{García-Navarro, Murillo, Fernández-Pato,
   Echeverribar \harvardand\ Morales-Hernández}{2019}{equation}
 García-Navarro, P., Murillo, J., Fernández-Pato, J., Echeverribar, I.
-  \harvardand\ Morales-Hernández, M.  \harvardyearleft 2019\harvardyearright .
-\newblock The shallow water equations and their application to realistic cases,
-  {\em Environmental Fluid Mechanics} {\bf 19}(5):~1235--1252.
+  \harvardand\ Morales-Hernández, M.  \harvardyearleft 2019\harvardyearright ,
+  `The shallow water equations and their application to realistic cases', {\em
+  Environmental Fluid Mechanics} {\bf 19}(5),~1235--1252.
 
 \harvarditem[Hall et~al.]{Hall, Manning \harvardand\ Hankin}{2011}{floodpaper}
 Hall, J.~W., Manning, L.~J. \harvardand\ Hankin, R. K.~S.  \harvardyearleft
-  2011\harvardyearright .
-\newblock Bayesian calibration of a flood inundation model using spatial data,
-  {\em Water Resources Research} {\bf 47}(5).
+  2011\harvardyearright , `Bayesian calibration of a flood inundation model
+  using spatial data', {\em Water Resources Research} {\bf 47}(5).
 
 \harvarditem[Hallegatte et~al.]{Hallegatte, Green, Nicholls \harvardand\
   Corfee-Morlot}{2013}{costs}
 Hallegatte, S., Green, C., Nicholls, R.~J. \harvardand\ Corfee-Morlot, J.
-  \harvardyearleft 2013\harvardyearright .
-\newblock Future flood losses in major coastal cities, {\em Nature Climate
-  Change} {\bf 3}(9):~802--806.
+  \harvardyearleft 2013\harvardyearright , `Future flood losses in major
+  coastal cities', {\em Nature Climate Change} {\bf 3}(9),~802--806.
 
 \harvarditem[Içten et~al.]{Içten, Nagy \harvardand\ Reklaitis}{2015}{pcadv}
 Içten, E., Nagy, Z.~K. \harvardand\ Reklaitis, G.~V.  \harvardyearleft
-  2015\harvardyearright .
-\newblock Process control of a dropwise additive manufacturing system for
-  pharmaceuticals using polynomial chaos expansion based surrogate model, {\em
-  Computers \& Chemical Engineering} {\bf 83}:~221--231.
+  2015\harvardyearright , `Process control of a dropwise additive manufacturing
+  system for pharmaceuticals using polynomial chaos expansion based surrogate
+  model', {\em Computers \& Chemical Engineering} {\bf 83},~221--231.
 
 \harvarditem[Kersaudy et~al.]{Kersaudy, Sudret, Varsier, Picon \harvardand\
   Wiart}{2015}{pckriging2}
 Kersaudy, P., Sudret, B., Varsier, N., Picon, O. \harvardand\ Wiart, J.
-  \harvardyearleft 2015\harvardyearright .
-\newblock A new surrogate modeling technique combining kriging and polynomial
-  chaos expansions – application to uncertainty analysis in computational
-  dosimetry, {\em Journal of Computational Physics} {\bf 286}:~103--117.
+  \harvardyearleft 2015\harvardyearright , `A new surrogate modeling technique
+  combining kriging and polynomial chaos expansions – application to
+  uncertainty analysis in computational dosimetry', {\em Journal of
+  Computational Physics} {\bf 286},~103--117.
 
 \harvarditem{Mahalanobis}{1936}{mahalanobis}
-Mahalanobis, P.~C.  \harvardyearleft 1936\harvardyearright .
-\newblock On the generalized distance in statistics, {\em Proceedings of the
-  National Institute of Sciences (Calcutta)} {\bf 2}:~49--55.
+Mahalanobis, P.~C.  \harvardyearleft 1936\harvardyearright , `On the
+  generalized distance in statistics', {\em Proceedings of the National
+  Institute of Sciences (Calcutta)} {\bf 2},~49--55.
 
 \harvarditem[Makrygiorgos et~al.]{Makrygiorgos, Maggioni \harvardand\
   Mesbah}{2020}{pccost}
 Makrygiorgos, G., Maggioni, G.~M. \harvardand\ Mesbah, A.  \harvardyearleft
-  2020\harvardyearright .
-\newblock Surrogate modeling for fast uncertainty quantification: Application
-  to 2d population balance models, {\em Computers \& Chemical Engineering} {\bf
-  138}:~106814.
+  2020\harvardyearright , `Surrogate modeling for fast uncertainty
+  quantification: Application to 2d population balance models', {\em Computers
+  \& Chemical Engineering} {\bf 138},~106814.
 
 \harvarditem[Mandli et~al.]{Mandli, Ahmadia, Berger, Calhoun, George,
   Hadjimichael, Ketcheson, Lemoine \harvardand\
   LeVeque}{2016}{mandli2016clawpack}
 Mandli, K.~T., Ahmadia, A.~J., Berger, M., Calhoun, D., George, D.~L.,
   Hadjimichael, Y., Ketcheson, D.~I., Lemoine, G.~I. \harvardand\ LeVeque,
-  R.~J.  \harvardyearleft 2016\harvardyearright .
-\newblock Clawpack: building an open source ecosystem for solving hyperbolic
-  pdes, {\em PeerJ Computer Science} {\bf 2}:~e68.
+  R.~J.  \harvardyearleft 2016\harvardyearright , `Clawpack: building an open
+  source ecosystem for solving hyperbolic pdes', {\em PeerJ Computer Science}
+  {\bf 2},~e68.
 
 \harvarditem[Quirante et~al.]{Quirante, Javaloyes \harvardand\
   Caballero}{2015}{quirante}
 Quirante, N., Javaloyes, J. \harvardand\ Caballero, J.~A.  \harvardyearleft
-  2015\harvardyearright .
-\newblock Rigorous design of distillation columns using surrogate models based
-  on kriging interpolation, {\em AIChE Journal} {\bf 61}(7):~2169--2187.
+  2015\harvardyearright , `Rigorous design of distillation columns using
+  surrogate models based on kriging interpolation', {\em AIChE Journal} {\bf
+  61}(7),~2169--2187.
 
 \harvarditem{Rannala}{2002}{mcmcpopular}
-Rannala, B.  \harvardyearleft 2002\harvardyearright .
-\newblock Identifiability of parameters in mcmc bayesian inference of
-  phylogeny, {\em Systematic Biology} {\bf 51}(5):~754--760.
+Rannala, B.  \harvardyearleft 2002\harvardyearright , `Identifiability of
+  parameters in mcmc bayesian inference of phylogeny', {\em Systematic Biology}
+  {\bf 51}(5),~754--760.
 
 \harvarditem{Rappaport}{2014}{deaths}
-Rappaport, E.~N.  \harvardyearleft 2014\harvardyearright .
-\newblock Fatalities in the united states from atlantic tropical cyclones: New
-  data and interpretation, {\em Bulletin of the American Meteorological
-  Society} {\bf 95}(3):~341--346.
+Rappaport, E.~N.  \harvardyearleft 2014\harvardyearright , `Fatalities in the
+  united states from atlantic tropical cyclones: New data and interpretation',
+  {\em Bulletin of the American Meteorological Society} {\bf 95}(3),~341--346.
 
 \harvarditem{Rasmussen \harvardand\ Williams}{2008}{gpebook}
 Rasmussen, C.~E. \harvardand\ Williams, C. K.~I.  \harvardyearleft
-  2008\harvardyearright .
-\newblock {\em Gaussian processes for machine learning}, MIT Press.
+  2008\harvardyearright , {\em Gaussian processes for machine learning}, MIT
+  Press.
 
 \harvarditem[Schobi et~al.]{Schobi, Sudret \harvardand\ Wiart}{2015}{pckriging}
 Schobi, R., Sudret, B. \harvardand\ Wiart, J.  \harvardyearleft
-  2015\harvardyearright .
-\newblock Polynomial-chaos-based kriging, {\em International Journal for
-  Uncertainty Quantification} {\bf 5}(2):~171--193.
+  2015\harvardyearright , `Polynomial-chaos-based kriging', {\em International
+  Journal for Uncertainty Quantification} {\bf 5}(2),~171--193.
 
 \harvarditem{Sivia \harvardand\ Skilling}{2006}{bayesbook}
 Sivia, D.~S. \harvardand\ Skilling, J.  \harvardyearleft 2006\harvardyearright
-  .
-\newblock {\em Data Analysis: A Bayesian Tutorial (Oxford science
-  publications)}, Oxford University Press.
+  , {\em Data Analysis: A Bayesian Tutorial (Oxford science publications)},
+  Oxford University Press.
 
 \harvarditem[Sochala et~al.]{Sochala, Chen, Dawson \harvardand\
   Iskandarani}{2019}{pcrmse}
 Sochala, P., Chen, C., Dawson, C. \harvardand\ Iskandarani, M.
-  \harvardyearleft 2019\harvardyearright .
-\newblock A polynomial chaos framework for probabilistic predictions of storm
-  surge events, {\em Computational Geosciences} {\bf 24}(1):~109--128.
+  \harvardyearleft 2019\harvardyearright , `A polynomial chaos framework for
+  probabilistic predictions of storm surge events', {\em Computational
+  Geosciences} {\bf 24}(1),~109--128.
 
 \harvarditem[Sraj et~al.]{Sraj, Mandli, Knio, Dawson \harvardand\
   Hoteit}{2014}{tsunami}
 Sraj, I., Mandli, K.~T., Knio, O.~M., Dawson, C.~N. \harvardand\ Hoteit, I.
-  \harvardyearleft 2014\harvardyearright .
-\newblock Uncertainty quantification and inference of manning’s friction
-  coefficients using dart buoy data during the tōhoku tsunami, {\em Ocean
-  Modelling} {\bf 83}:~82--97.
+  \harvardyearleft 2014\harvardyearright , `Uncertainty quantification and
+  inference of manning’s friction coefficients using dart buoy data during
+  the tōhoku tsunami', {\em Ocean Modelling} {\bf 83},~82--97.
 
 \harvarditem[Tagade et~al.]{Tagade, Jeong \harvardand\ Choi}{2013}{cfd}
 Tagade, P.~M., Jeong, B.-M. \harvardand\ Choi, H.-L.  \harvardyearleft
-  2013\harvardyearright .
-\newblock A gaussian process emulator approach for rapid contaminant
-  characterization with an integrated multizone-cfd model, {\em Building and
-  Environment} {\bf 70}:~232--244.
+  2013\harvardyearright , `A gaussian process emulator approach for rapid
+  contaminant characterization with an integrated multizone-cfd model', {\em
+  Building and Environment} {\bf 70},~232--244.
 
 \harvarditem{van Beers \harvardand\ Kleijnen}{2003}{krigingintro}
 van Beers, W. C.~M. \harvardand\ Kleijnen, J. P.~C.  \harvardyearleft
-  2003\harvardyearright .
-\newblock Kriging for interpolation in random simulation, {\em Journal of the
-  Operational Research Society} {\bf 54}(3):~255--262.
+  2003\harvardyearright , `Kriging for interpolation in random simulation',
+  {\em Journal of the Operational Research Society} {\bf 54}(3),~255--262.
 
 \harvarditem{Warder}{2020}{phd}
-Warder, S.~C.  \harvardyearleft 2020\harvardyearright .
-\newblock {\em Sensitivity analysis, uncertainty quantification and parameter
-  estimation for a numerical tide and storm surge model}, PhD thesis, Imperial
-  College London.
+Warder, S.~C.  \harvardyearleft 2020\harvardyearright , Sensitivity analysis,
+  uncertainty quantification and parameter estimation for a numerical tide and
+  storm surge model, PhD thesis, Imperial College London.
 
 \harvarditem{Xiu \harvardand\ Karniadakis}{2002}{xiu}
 Xiu, D. \harvardand\ Karniadakis, G.~E.  \harvardyearleft 2002\harvardyearright
-  .
-\newblock The wiener--askey polynomial chaos for stochastic differential
-  equations, {\em SIAM Journal on Scientific Computing} {\bf 24}(2):~619--644.
+  , `The wiener--askey polynomial chaos for stochastic differential equations',
+  {\em SIAM Journal on Scientific Computing} {\bf 24}(2),~619--644.
 
 \harvarditem{Xiu \harvardand\ Tartakovsky}{2004}{xiu2}
-Xiu, D. \harvardand\ Tartakovsky, D.  \harvardyearleft 2004\harvardyearright .
-\newblock Uncertainty quantification for flow in highly heterogeneous porous
-  media, {\em Computational Methods in Water Resources: Volume 1} pp.~695--703.
+Xiu, D. \harvardand\ Tartakovsky, D.  \harvardyearleft 2004\harvardyearright ,
+  `Uncertainty quantification for flow in highly heterogeneous porous media',
+  {\em Computational Methods in Water Resources: Volume 1} pp.~695--703.
 
 \harvarditem[Yang et~al.]{Yang, Jakeman, Fang \harvardand\ Chen}{2018}{gpesens}
 Yang, J., Jakeman, A., Fang, G. \harvardand\ Chen, X.  \harvardyearleft
-  2018\harvardyearright .
-\newblock Uncertainty analysis of a semi-distributed hydrologic model based on
-  a gaussian process emulator, {\em Environmental Modelling \& Software} {\bf
-  101}:~289--300.
+  2018\harvardyearright , `Uncertainty analysis of a semi-distributed
+  hydrologic model based on a gaussian process emulator', {\em Environmental
+  Modelling \& Software} {\bf 101},~289--300.
 
 \harvarditem[Zhou et~al.]{Zhou, Lu \harvardand\ Cheng}{2019}{pckrigingext}
 Zhou, Y., Lu, Z. \harvardand\ Cheng, K.  \harvardyearleft 2019\harvardyearright
-  .
-\newblock A new surrogate modeling method combining polynomial chaos expansion
-  and gaussian kernel in a sparse bayesian learning framework, {\em
-  International Journal for Numerical Methods in Engineering} {\bf
-  120}(4):~498--516.
+  , `A new surrogate modeling method combining polynomial chaos expansion and
+  gaussian kernel in a sparse bayesian learning framework', {\em International
+  Journal for Numerical Methods in Engineering} {\bf 120}(4),~498--516.
 
 \end{thebibliography}
