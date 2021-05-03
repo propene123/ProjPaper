@@ -1,0 +1,20 @@
+\begin{gather*}
+					P(n_1,n_2,n_3,\sigma^2_i|\eta_i)\propto L(\eta|n)q(\sigma^2)q(n_1)q(n_2)q(n_3) \\
+					L(\eta|n) = \frac{1}{\sqrt{2\pi\sigma^2}}\prod_i\exp\left(
+					\frac{-(\eta_i - M_i(n))^2}{2\sigma^2}
+					\right)
+				\end{gather*}
+			$n_i$ represents friction parameters, $\eta_i$ represents actual observed sea level rise, $M_i$ is the model output for sea level rise, and $q(k)$ are prior distributions of model parameters.
+			\item
+			Create kriging surrogate according to~\cite{phd}:
+			\begin{gather*}
+				\bm{f_*}|\bm{f}\sim \mathcal{N}(\bm{\mu}_* + \Sigma_*^T\Sigma^{-1}(\bm{f}-\bm{\mu}),
+				\Sigma_{**}-\Sigma_*^T\Sigma^{-1}\Sigma_*) \\
+				\bm{\mu} = g(\bm{X})^T\cdot \bm{\beta} \\
+				\bm{\mu}_* = g(\bm{X}_*)^T\cdot \bm{\beta}
+			\end{gather*}
+			\item
+			Create PCE surrogate according to~\cite{tsunami}:
+			\begin{equation*}
+				U(\bm{x},t,\zeta)=\sum_{k=0}^{P}U_k(\bm{x},t)\Psi_k(\zeta)
+			\end{equation*} 

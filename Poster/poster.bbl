@@ -1,14 +1,54 @@
 \begin{thebibliography}{xx}
 
+\harvarditem[Berger et~al.]{Berger, George, LeVeque \harvardand\
+  Mandli}{2011}{geoclaw}
+Berger, M.~J., George, D.~L., LeVeque, R.~J. \harvardand\ Mandli, K.~T.
+  \harvardyearleft 2011\harvardyearright , `The {GeoClaw} software for
+  depth-averaged flows with adaptive refinement', {\em Adv. Water Res.} {\bf
+  34},~1195--1206.
+\newline\harvardurl{\url{www.clawpack.org/links/papers/awr11}}
+
+\harvarditem{{Clawpack Development Team}}{2020}{clawpack}
+{Clawpack Development Team}  \harvardyearleft 2020\harvardyearright , `Clawpack
+  software'.
+\newblock Version 5.7.1.
+\newline\harvardurl{http://www.clawpack.org}
+
 \harvarditem[Hallegatte et~al.]{Hallegatte, Green, Nicholls \harvardand\
   Corfee-Morlot}{2013}{costs}
 Hallegatte, S., Green, C., Nicholls, R.~J. \harvardand\ Corfee-Morlot, J.
   \harvardyearleft 2013\harvardyearright , `Future flood losses in major
   coastal cities', {\em Nature Climate Change} {\bf 3}(9),~802--806.
 
+\harvarditem[Mandli et~al.]{Mandli, Ahmadia, Berger, Calhoun, George,
+  Hadjimichael, Ketcheson, Lemoine \harvardand\
+  LeVeque}{2016}{mandli2016clawpack}
+Mandli, K.~T., Ahmadia, A.~J., Berger, M., Calhoun, D., George, D.~L.,
+  Hadjimichael, Y., Ketcheson, D.~I., Lemoine, G.~I. \harvardand\ LeVeque,
+  R.~J.  \harvardyearleft 2016\harvardyearright , `Clawpack: building an open
+  source ecosystem for solving hyperbolic pdes', {\em PeerJ Computer Science}
+  {\bf 2},~e68.
+
 \harvarditem{Rappaport}{2014}{deaths}
 Rappaport, E.~N.  \harvardyearleft 2014\harvardyearright , `Fatalities in the
   united states from atlantic tropical cyclones: New data and interpretation',
   {\em Bulletin of the American Meteorological Society} {\bf 95}(3),~341--346.
+
+\harvarditem[Schobi et~al.]{Schobi, Sudret \harvardand\ Wiart}{2015}{pckriging}
+Schobi, R., Sudret, B. \harvardand\ Wiart, J.  \harvardyearleft
+  2015\harvardyearright , `Polynomial-chaos-based kriging', {\em International
+  Journal for Uncertainty Quantification} {\bf 5}(2),~171--193.
+
+\harvarditem[Sraj et~al.]{Sraj, Mandli, Knio, Dawson \harvardand\
+  Hoteit}{2014}{tsunami}
+Sraj, I., Mandli, K.~T., Knio, O.~M., Dawson, C.~N. \harvardand\ Hoteit, I.
+  \harvardyearleft 2014\harvardyearright , `Uncertainty quantification and
+  inference of manning’s friction coefficients using dart buoy data during
+  the tōhoku tsunami', {\em Ocean Modelling} {\bf 83},~82--97.
+
+\harvarditem{Warder}{2020}{phd}
+Warder, S.~C.  \harvardyearleft 2020\harvardyearright , Sensitivity analysis,
+  uncertainty quantification and parameter estimation for a numerical tide and
+  storm surge model, PhD thesis, Imperial College London.
 
 \end{thebibliography}
