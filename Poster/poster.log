@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.16)  2 MAY 2021 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.16)  3 MAY 2021 01:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -754,270 +754,18 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count304
 \enitdp@description=\count305
 ) (./tartu.sty)
-(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2020/08/23 v3.15a programmable bibliographies (PK/MW)
-
-(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip59
+\bibsep=\skip60
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count306
 )
+(/usr/share/texmf-dist/tex/latex/har2nat/har2nat.sty
+Package: har2nat 2005/12/01 1.0 Harvard to natbib
 
-(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-
-(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
-(/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
-Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count306
-
-(/usr/share/texmf-dist/tex/latex/logreq/logreq.def
-File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(/usr/share/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-\c@tabx@nest=\count307
-\c@listtotal=\count308
-\c@listcount=\count309
-\c@liststart=\count310
-\c@liststop=\count311
-\c@citecount=\count312
-\c@citetotal=\count313
-\c@multicitecount=\count314
-\c@multicitetotal=\count315
-\c@instcount=\count316
-\c@maxnames=\count317
-\c@minnames=\count318
-\c@maxitems=\count319
-\c@minitems=\count320
-\c@citecounter=\count321
-\c@maxcitecounter=\count322
-\c@savedcitecounter=\count323
-\c@uniquelist=\count324
-\c@uniquename=\count325
-\c@refsection=\count326
-\c@refsegment=\count327
-\c@maxextratitle=\count328
-\c@maxextratitleyear=\count329
-\c@maxextraname=\count330
-\c@maxextradate=\count331
-\c@maxextraalpha=\count332
-\c@abbrvpenalty=\count333
-\c@highnamepenalty=\count334
-\c@lownamepenalty=\count335
-\c@maxparens=\count336
-\c@parenlevel=\count337
-\blx@tempcnta=\count338
-\blx@tempcntb=\count339
-\blx@tempcntc=\count340
-\blx@maxsection=\count341
-\blx@maxsegment@0=\count342
-\blx@notetype=\count343
-\blx@parenlevel@text=\count344
-\blx@parenlevel@foot=\count345
-\blx@sectionciteorder@0=\count346
-\blx@entrysetcounter=\count347
-\blx@biblioinstance=\count348
-\labelnumberwidth=\skip59
-\labelalphawidth=\skip60
-\biblabelsep=\skip61
-\bibitemsep=\skip62
-\bibnamesep=\skip63
-\bibinitsep=\skip64
-\bibparsep=\skip65
-\bibhang=\skip66
-\blx@bcfin=\read3
-\blx@bcfout=\write4
-\blx@langwohyphens=\language86
-\c@mincomprange=\count349
-\c@maxcomprange=\count350
-\c@mincompwidth=\count351
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2020/08/23 v3.15a biblatex localization (PK/MW)
-)
-Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'numeric.dbx' not found.
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count352
-\c@savedafterword=\count353
-\c@annotator=\count354
-\c@savedannotator=\count355
-\c@author=\count356
-\c@savedauthor=\count357
-\c@bookauthor=\count358
-\c@savedbookauthor=\count359
-\c@commentator=\count360
-\c@savedcommentator=\count361
-\c@editor=\count362
-\c@savededitor=\count363
-\c@editora=\count364
-\c@savededitora=\count365
-\c@editorb=\count366
-\c@savededitorb=\count367
-\c@editorc=\count368
-\c@savededitorc=\count369
-\c@foreword=\count370
-\c@savedforeword=\count371
-\c@holder=\count372
-\c@savedholder=\count373
-\c@introduction=\count374
-\c@savedintroduction=\count375
-\c@namea=\count376
-\c@savednamea=\count377
-\c@nameb=\count378
-\c@savednameb=\count379
-\c@namec=\count380
-\c@savednamec=\count381
-\c@translator=\count382
-\c@savedtranslator=\count383
-\c@shortauthor=\count384
-\c@savedshortauthor=\count385
-\c@shorteditor=\count386
-\c@savedshorteditor=\count387
-\c@labelname=\count388
-\c@savedlabelname=\count389
-\c@institution=\count390
-\c@savedinstitution=\count391
-\c@lista=\count392
-\c@savedlista=\count393
-\c@listb=\count394
-\c@savedlistb=\count395
-\c@listc=\count396
-\c@savedlistc=\count397
-\c@listd=\count398
-\c@savedlistd=\count399
-\c@liste=\count400
-\c@savedliste=\count401
-\c@listf=\count402
-\c@savedlistf=\count403
-\c@location=\count404
-\c@savedlocation=\count405
-\c@organization=\count406
-\c@savedorganization=\count407
-\c@origlocation=\count408
-\c@savedoriglocation=\count409
-\c@origpublisher=\count410
-\c@savedorigpublisher=\count411
-\c@publisher=\count412
-\c@savedpublisher=\count413
-\c@language=\count414
-\c@savedlanguage=\count415
-\c@origlanguage=\count416
-\c@savedoriglanguage=\count417
-\c@pageref=\count418
-\c@savedpageref=\count419
-\shorthandwidth=\skip67
-\shortjournalwidth=\skip68
-\shortserieswidth=\skip69
-\shorttitlewidth=\skip70
-\shortauthorwidth=\skip71
-\shorteditorwidth=\skip72
-\locallabelnumberwidth=\skip73
-\locallabelalphawidth=\skip74
-\localshorthandwidth=\skip75
-\localshortjournalwidth=\skip76
-\localshortserieswidth=\skip77
-\localshorttitlewidth=\skip78
-\localshortauthorwidth=\skip79
-\localshorteditorwidth=\skip80
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-12-03 L3 programming layer (loader) 
-
-(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count420
-\l__pdf_internal_box=\box96
-))
-Package biblatex Info: expl3
-(biblatex)             2020-12-03 L3 programming layer (loader) 
-(biblatex)             is new enough (at least 2020/04/06),
-(biblatex)             setting 'casechanger=expl3'.
-Package biblatex Info: Trying to load expl3 case changing code...
-Package biblatex Info: ... file 'blx-case-expl3.def' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.def
-(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2020-10-27 L3 Experimental document command parser
-
-(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
-File: blx-case-expl3 2020/08/23 v3.15a expl3 case changing code for biblatex
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
-\c@textcitecount=\count421
-\c@textcitetotal=\count422
-\c@textcitemaxnames=\count423
-\c@biburlbigbreakpenalty=\count424
-\c@biburlbreakpenalty=\count425
-\c@biburlnumpenalty=\count426
-\c@biburlucpenalty=\count427
-\c@biburllcpenalty=\count428
-\biburlbigskip=\muskip18
-\biburlnumskip=\muskip19
-\biburlucskip=\muskip20
-\biburllcskip=\muskip21
-\c@smartand=\count429
-)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count430
-\c@bbx:relatedtotal=\count431
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2020/08/23 v3.15a biblatex citation style (PK/MW)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
-File: biblatex.cfg 
+(/usr/share/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
 ))
 (/usr/share/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
@@ -1035,44 +783,67 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (./poster.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
 
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count307
+\l__pdf_internal_box=\box96
+) (./poster.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count432
+\scratchcounter=\count308
 \scratchdimen=\dimen364
 \scratchbox=\box97
-\nofMPsegments=\count433
-\nofMParguments=\count434
+\nofMPsegments=\count309
+\nofMParguments=\count310
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count435
+\MPscratchCnt=\count311
 \MPscratchDim=\dimen365
-\MPnumerator=\count436
-\makeMPintoPDFobject=\count437
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
 \everyMPtoPDFconversion=\toks47
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
 (/usr/share/texmf-dist/tex/latex/grfext/grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
 (/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 Package grfext Info: Graphics extension search list:
@@ -1121,85 +892,64 @@ e
 <./images//logo.png, id=29, 34.88031pt x 15.05624pt>
 File: ./images//logo.png Graphic file (type png)
 <use ./images//logo.png>
-Package pdftex.def Info: ./images//logo.png  used on input line 36.
+Package pdftex.def Info: ./images//logo.png  used on input line 39.
 (pdftex.def)             Requested size: 287.13351pt x 123.9609pt.
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
-(/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
-)
-Package biblatex Info: Input encoding 'utf8' detected.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'poster.bbl' found.
- (./poster.bbl
-Missing character: There is no [ in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ] in font nullfont!
-Missing character: There is no [ in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no ] in font nullfont!
-)
-Package biblatex Info: Reference section=0 on input line 36.
-Package biblatex Info: Reference segment=0 on input line 36.
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 19.70294pt on input line 38.
+(Font)              scaled to size 19.70294pt on input line 41.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 49.01033pt on input line 38.
+(Font)              scaled to size 49.01033pt on input line 41.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 49.01033pt on input line 38.
+(Font)              scaled to size 49.01033pt on input line 41.
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
-(Font)              scaled to size 49.01033pt on input line 38.
+(Font)              scaled to size 49.01033pt on input line 41.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 40.84036pt on input line 38.
+(Font)              scaled to size 40.84036pt on input line 41.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 40.84036pt on input line 38.
-LaTeX Font Info:    Calculating math sizes for size <42.99> on input line 38.
-
+(Font)              scaled to size 40.84036pt on input line 41.
+LaTeX Font Info:    Calculating math sizes for size <42.99> on input line 41.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <21.495> not available
-(Font)              size <20.74> substituted on input line 38.
+(Font)              size <20.74> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <42.99> not available
-(Font)              size <24.88> substituted on input line 38.
+(Font)              size <24.88> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <30.09286> not available
-(Font)              size <24.88> substituted on input line 38.
+(Font)              size <24.88> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <21.495> not available
-(Font)              size <20.74> substituted on input line 38.
+(Font)              size <20.74> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <42.99> not available
-(Font)              size <24.88> substituted on input line 38.
+(Font)              size <24.88> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <30.09286> not available
-(Font)              size <24.88> substituted on input line 38.
+(Font)              size <24.88> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <21.495> not available
-(Font)              size <20.74> substituted on input line 38.
+(Font)              size <20.74> substituted on input line 41.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 38
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 41
 .
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1207,101 +957,120 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <42.99> not available
-(Font)              size <24.88> substituted on input line 38.
+(Font)              size <24.88> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <30.09286> not available
-(Font)              size <24.88> substituted on input line 38.
+(Font)              size <24.88> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <21.495> not available
-(Font)              size <20.74> substituted on input line 38.
+(Font)              size <20.74> substituted on input line 41.
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 28.58812pt on input line 38.
+(Font)              scaled to size 28.58812pt on input line 41.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 34.03839pt on input line 38.
-LaTeX Font Info:    Calculating math sizes for size <35.83> on input line 38.
+(Font)              scaled to size 34.03839pt on input line 41.
+LaTeX Font Info:    Calculating math sizes for size <35.83> on input line 41.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <17.915> not available
-(Font)              size <17.28> substituted on input line 38.
+(Font)              size <17.28> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <35.83> not available
-(Font)              size <24.88> substituted on input line 38.
+(Font)              size <24.88> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <17.915> not available
-(Font)              size <17.28> substituted on input line 38.
+(Font)              size <17.28> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <35.83> not available
-(Font)              size <24.88> substituted on input line 38.
+(Font)              size <24.88> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <17.915> not available
-(Font)              size <17.28> substituted on input line 38.
+(Font)              size <17.28> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <35.83> not available
-(Font)              size <24.88> substituted on input line 38.
+(Font)              size <24.88> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <17.915> not available
-(Font)              size <17.28> substituted on input line 38.
+(Font)              size <17.28> substituted on input line 41.
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 23.82675pt on input line 38.
+(Font)              scaled to size 23.82675pt on input line 41.
 File: ./images//logo.png Graphic file (type png)
 <use ./images//logo.png>
-Package pdftex.def Info: ./images//logo.png  used on input line 38.
+Package pdftex.def Info: ./images//logo.png  used on input line 41.
 (pdftex.def)             Requested size: 280.30515pt x 121.0129pt.
 File: ./images//logo.png Graphic file (type png)
 <use ./images//logo.png>
-Package pdftex.def Info: ./images//logo.png  used on input line 38.
+Package pdftex.def Info: ./images//logo.png  used on input line 41.
 (pdftex.def)             Requested size: 280.30515pt x 121.0129pt.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 34.03839pt on input line 43.
+(Font)              scaled to size 34.03839pt on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 43.
+(Font)              scaled to size 23.63593pt on input line 48.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
+0.
+(/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 23.63593pt on input line 60.
+
+Underfull \hbox (badness 3029) in paragraph at lines 60--60
+[]\T1/phv/m/n/24.88 Implement and use the krig-ing sur-ro-gate mod-elling
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 60--60
+[]\T1/phv/m/n/24.88 Analyse the in-ferred pa-ram-e-ters from each sur-ro-gate
+ []
+
+<./images//Deaths.png, id=30, 966.61125pt x 874.01532pt>
+File: ./images//Deaths.png Graphic file (type png)
+<use ./images//Deaths.png>
+Package pdftex.def Info: ./images//Deaths.png  used on input line 67.
+(pdftex.def)             Requested size: 441.06871pt x 398.81119pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 67.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <20.74> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 67.
+(Font)              scaled to size 16.41594pt on input line 67.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 13.67995pt on input line 89.
+(./poster.bbl
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 19.70294pt on input line 67.
-LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
-(Font)              scaled to size 19.70294pt on input line 67.
-LaTeX Font Info:    Trying to load font information for T1+aett on input line 6
-7.
-(/usr/share/texmf-dist/tex/latex/ae/t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+(Font)              scaled to size 13.67995pt on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 13.67995pt on input line 7.
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//logo.png>] (./po
-ster.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//logo.png> <./ima
+ges//Deaths.png (PNG copy)>] (./poster.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 18.11pt have occurred.
 
-Package logreq Info: Writing requests to 'poster.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 27333 strings out of 479383
- 559355 string characters out of 5875830
- 1324674 words of memory out of 5000000
- 43922 multiletter control sequences out of 15000+600000
- 460681 words of font info for 108 fonts, out of 8000000 for 9000
+ 20927 strings out of 479383
+ 428531 string characters out of 5875830
+ 784551 words of memory out of 5000000
+ 37559 multiletter control sequences out of 15000+600000
+ 460598 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,11n,124p,739b,2847s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 122i,11n,124p,659b,1360s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/urw/h
-elvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><
-/usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on poster.pdf (1 page, 41619 bytes).
+ts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helveti
+c/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on poster.pdf (1 page, 437494 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 

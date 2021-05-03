@@ -1,15 +1,46 @@
-[0] Config.pm:312> INFO - This is Biber 2.15
-[0] Config.pm:315> INFO - Logfile is 'poster.blg'
-[60] biber:330> INFO - === Sun May  2, 2021, 15:56:57
-[71] Biber.pm:415> INFO - Reading 'poster.bcf'
-[122] Biber.pm:952> INFO - Found 2 citekeys in bib section 0
-[132] Biber.pm:4334> INFO - Processing section 0
-[139] Biber.pm:4523> INFO - Looking for bibtex format file 'refs.bib' for section 0
-[140] bibtex.pm:1682> INFO - LaTeX decoding ...
-[142] bibtex.pm:1494> INFO - Found BibTeX data source 'refs.bib'
-[177] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[177] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[177] Biber.pm:4162> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[177] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[178] bbl.pm:651> INFO - Writing 'poster.bbl' with encoding 'UTF-8'
-[179] bbl.pm:754> INFO - Output to poster.bbl
+This is BibTeX, Version 0.99d (TeX Live 2020/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: poster.aux
+The style file: agsm.bst
+Database file #1: refs.bib
+You've used 2 entries,
+            2909 wiz_defined-function locations,
+            652 strings with 5075 characters,
+and the built_in function-call counts, 9926 in all, are:
+= -- 1628
+> -- 115
+< -- 0
++ -- 783
+- -- 35
+* -- 873
+:= -- 1975
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 28
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 32
+empty$ -- 73
+format.name$ -- 40
+if$ -- 1780
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 9
+num.names$ -- 21
+pop$ -- 5
+preamble$ -- 1
+purify$ -- 30
+quote$ -- 0
+skip$ -- 28
+stack$ -- 0
+substring$ -- 2341
+swap$ -- 6
+text.length$ -- 28
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 0
+while$ -- 44
+width$ -- 0
+write$ -- 28

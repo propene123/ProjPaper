@@ -1,98 +1,14 @@
-% $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
-% Do not modify the above lines!
-%
-% This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
-%
-\begingroup
-\makeatletter
-\@ifundefined{ver@biblatex.sty}
-  {\@latex@error
-     {Missing 'biblatex' package}
-     {The bibliography requires the 'biblatex' package.}
-      \aftergroup\endinput}
-  {}
-\endgroup
+\begin{thebibliography}{xx}
 
+\harvarditem[Hallegatte et~al.]{Hallegatte, Green, Nicholls \harvardand\
+  Corfee-Morlot}{2013}{costs}
+Hallegatte, S., Green, C., Nicholls, R.~J. \harvardand\ Corfee-Morlot, J.
+  \harvardyearleft 2013\harvardyearright , `Future flood losses in major
+  coastal cities', {\em Nature Climate Change} {\bf 3}(9),~802--806.
 
-\refsection{0}
-  \datalist[entry]{none/global//global/global}
-    \entry{deaths}{article}{}
-      \name{author}{1}{}{%
-        {{hash=461f08f0b1b93f29702d01a6e2985a06}{%
-           family={Rappaport},
-           familyi={R\bibinitperiod},
-           given={Edward\bibnamedelima N.},
-           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-      }
-      \strng{namehash}{461f08f0b1b93f29702d01a6e2985a06}
-      \strng{fullhash}{461f08f0b1b93f29702d01a6e2985a06}
-      \strng{bibnamehash}{461f08f0b1b93f29702d01a6e2985a06}
-      \strng{authorbibnamehash}{461f08f0b1b93f29702d01a6e2985a06}
-      \strng{authornamehash}{461f08f0b1b93f29702d01a6e2985a06}
-      \strng{authorfullhash}{461f08f0b1b93f29702d01a6e2985a06}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Bulletin of the American Meteorological Society}
-      \field{number}{3}
-      \field{title}{Fatalities in the United States from Atlantic Tropical Cyclones: New Data and Interpretation}
-      \field{volume}{95}
-      \field{year}{2014}
-      \field{pages}{341\bibrangedash 346}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1175/bams-d-12-00074.1
-      \endverb
-    \endentry
-    \entry{costs}{article}{}
-      \name{author}{4}{}{%
-        {{hash=ec89b13a4da1fc6c42c65ee9d049d05a}{%
-           family={Hallegatte},
-           familyi={H\bibinitperiod},
-           given={Stephane},
-           giveni={S\bibinitperiod}}}%
-        {{hash=df816dc51dc67ad96b01565d142754c4}{%
-           family={Green},
-           familyi={G\bibinitperiod},
-           given={Colin},
-           giveni={C\bibinitperiod}}}%
-        {{hash=351c82fd8df362ed518ace4f595d7e94}{%
-           family={Nicholls},
-           familyi={N\bibinitperiod},
-           given={Robert\bibnamedelima J.},
-           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=1f6d8d7881fbda6f2cc946e52cfca475}{%
-           family={Corfee-Morlot},
-           familyi={C\bibinithyphendelim M\bibinitperiod},
-           given={Jan},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{6182759a9fb1204e37044ed3461c39a7}
-      \strng{fullhash}{0e040af896b80500fa8b646dc24bb925}
-      \strng{bibnamehash}{6182759a9fb1204e37044ed3461c39a7}
-      \strng{authorbibnamehash}{6182759a9fb1204e37044ed3461c39a7}
-      \strng{authornamehash}{6182759a9fb1204e37044ed3461c39a7}
-      \strng{authorfullhash}{0e040af896b80500fa8b646dc24bb925}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nature Climate Change}
-      \field{number}{9}
-      \field{title}{Future flood losses in major coastal cities}
-      \field{volume}{3}
-      \field{year}{2013}
-      \field{pages}{802\bibrangedash 806}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1038/nclimate1979
-      \endverb
-    \endentry
-  \enddatalist
-\endrefsection
-\endinput
+\harvarditem{Rappaport}{2014}{deaths}
+Rappaport, E.~N.  \harvardyearleft 2014\harvardyearright , `Fatalities in the
+  united states from atlantic tropical cyclones: New data and interpretation',
+  {\em Bulletin of the American Meteorological Society} {\bf 95}(3),~341--346.
 
+\end{thebibliography}
